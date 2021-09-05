@@ -1,0 +1,5 @@
+export const ActionTypes = {
+    SET_COINS: 'SET_COINS',
+    SELECTED_COIN: 'SELECTED_COIN',
+    REMOVE_SELECTED_COIN: 'REMOVE_SELECTED_COIN'
+}
