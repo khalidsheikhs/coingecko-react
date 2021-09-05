@@ -54,8 +54,8 @@ const Coins = () => {
                                 <td>{getCurrencySymbol()+formatCurrency(coin.total_volume)}</td>
                                 <td>{getCurrencySymbol()+formatCurrency(coin.market_cap)}</td>
                                 <td>
-                                    <Sparklines data={coin.sparkline_in_7d.price} width={135} height={50}>
-                                        <SparklinesLine color="blue" style={{ fill: "none" }} />
+                                    <Sparklines data={coin.sparkline_in_7d.price} height={80} width={135}>
+                                        <SparklinesLine style={{ stroke: "#8ed53f", strokeWidth: "1", fill: "none" }} />
                                     </Sparklines>
                                 </td>
                             </tr>))

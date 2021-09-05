@@ -16,3 +16,10 @@ export const getCoinById = async (id) => {
         console.log('ERR', err);
     });
 }
+
+/* Function to get coin chart by id */
+export const getCoinChartById = async (id) => {
+    return await axios.get(PATH + id + '/market_chart?vs_currency=' + getCurrency() + '&days=1').catch((err) => {
+        console.log('ERR', err);
+    });
+}
